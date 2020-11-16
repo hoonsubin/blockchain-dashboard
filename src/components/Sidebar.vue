@@ -15,7 +15,7 @@
                 -->
                 <img class="h-12 w-12" src="../assets/img/logo-small.png">
 
-                <span class="text-white text-2xl mx-2 font-semibold">Crypto Dashboard</span>
+                <span class="text-white text-2xl mx-2 font-semibold">Blockchain Dashboard</span>
             </div>
         </div>
 
