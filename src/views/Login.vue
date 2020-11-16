@@ -10,7 +10,7 @@
             </svg>-->
 
             <img class="h-10 w-10 mr-4" src="../assets/img/logo-small.png">
-            <span class="text-gray-700 font-semibold text-2xl">Crypto Dashboard</span>
+            <span class="text-gray-700 font-semibold text-2xl">Blockchain Dashboard</span>
         </div>
 
         <form class="mt-4" @submit.prevent="login">

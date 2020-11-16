@@ -1,5 +1,5 @@
 {
-    "name": "crypto-dashboard",
+    "name": "blockchain-dashboard-starter",
     "version": "0.0.1",
     "scripts": {
         "start": "yarn run dev",
