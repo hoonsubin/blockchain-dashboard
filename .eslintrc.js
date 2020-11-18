@@ -6,6 +6,7 @@ module.exports = {
         'plugin:vue/essential',
         'plugin:prettier-vue/recommended',
         'prettier/vue',
+        'plugin:prettier/recommended',
     ],
     parserOptions: {
         ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
@@ -71,6 +72,7 @@ module.exports = {
             },
         },
     },
+    plugins: ['prettier'],
     rules: {
         // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
@@ -84,9 +86,10 @@ module.exports = {
                 // @see https://prettier.io/docs/en/options.html
                 printWidth: 100,
                 singleQuote: true,
-                semi: false,
+                semi: true,
                 trailingComma: 'es5',
             },
         ],
+        'prettier/prettier': 'error',
     },
 };
