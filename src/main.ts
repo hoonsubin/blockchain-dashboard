@@ -5,8 +5,8 @@ import router from './router';
 import { store } from './store';
 import './assets/style/main.css';
 
-import DashboardLayout from './components/DashboardLayout.vue';
-import EmptyLayout from './components/EmptyLayout.vue';
+import DashboardLayout from './layouts/DashboardLayout.vue';
+import EmptyLayout from './layouts/EmptyLayout.vue';
 
 const app = createApp(App);
 
