@@ -11,6 +11,7 @@ import { useRouter } from 'vue-router';
 const defaultLayout = 'default';
 
 export default defineComponent({
+    name: 'App',
     setup() {
         const { currentRoute } = useRouter();
 

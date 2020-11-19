@@ -26,6 +26,7 @@
         "eslint-plugin-prettier-vue": "^2.1.1",
         "eslint-plugin-vue": "^7.1.0",
         "prettier": "^2.1.2",
+        "tailwindcss-theme-variants": "^1.10.0-beta.7",
         "typescript": "^4.0.5",
         "vite": "^1.0.0-rc.9"
     }

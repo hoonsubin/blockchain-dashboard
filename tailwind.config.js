@@ -1,7 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const { themeVariants, prefersLight, prefersDark } = require('tailwindcss-theme-variants');
 
 whitelist = ['gray', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'pink'].reduce(
-    (result, color) => result.push(`text-${color}-600`, `bg-${color}-600`, `bg-${color}-500`) && result,
+    (result, color) =>
+        result.push(`text-${color}-600`, `bg-${color}-600`, `bg-${color}-500`) && result,
     [],
 );
 
@@ -21,6 +23,9 @@ module.exports = {
         },
     },
     theme: {
+        backgroundColor: {
+            'gray-900': '#1A202C',
+        },
         extend: {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
@@ -39,5 +44,24 @@ module.exports = {
             '6xl': ['4rem', { lineHeight: '1' }],
         },
     },
-    plugins: [require('@tailwindcss/custom-forms')],
+    variants: {
+        backgroundColor: ['light', 'dark'],
+        textColor: ['hover', 'light', 'dark'],
+    },
+    plugins: [
+        require('@tailwindcss/custom-forms'),
+        themeVariants({
+            themes: {
+                dark: {
+                    selector: '.dark-theme',
+                    mediaQuery: prefersDark /* "@media (prefers-color-scheme: dark)" */,
+                },
+                light: {
+                    selector: '.light-theme',
+                    mediaQuery: prefersLight /* "@media (prefers-color-scheme: light)" */,
+                },
+            },
+            fallback: true,
+        }),
+    ],
 };
