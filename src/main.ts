@@ -4,7 +4,7 @@ import App from './App.vue';
 import router from './router';
 import { store } from './store';
 import './assets/style/main.css';
-
+import './registerServiceWorker';
 import DashboardLayout from './layouts/DashboardLayout.vue';
 import EmptyLayout from './layouts/EmptyLayout.vue';
 
