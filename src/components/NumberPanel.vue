@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent } from 'vue';
 
 // tailwind css color alias
 type BackgroundColor = 'indigo' | 'pink' | 'blue' | 'orange';
