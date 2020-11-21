@@ -8,7 +8,6 @@ import Login from '../views/Login.vue';
 import Modal from '../views/Modal.vue';
 import Card from '../views/Card.vue';
 import Blank from '../views/Blank.vue';
-import NotFound from '../views/NotFound.vue';
 
 const routes: RouteRecordRaw[] = [
     {
