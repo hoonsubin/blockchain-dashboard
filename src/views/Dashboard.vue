@@ -7,21 +7,21 @@
                 <NumberPanel
                     label="New Users"
                     :value="users.length"
-                    icon-src="../assets/img/people-icon.svg"
+                    :icon-src="require('@/assets/img/people-icon.svg')"
                     icon-bg-color="indigo"
                 />
 
                 <NumberPanel
                     label="Total Orders"
                     :value="200521"
-                    icon-src="../assets/img/shopping-cart-icon.svg"
+                    :icon-src="require('@/assets/img/shopping-cart-icon.svg')"
                     icon-bg-color="orange"
                 />
 
                 <NumberPanel
                     label="Available Products"
                     :value="215542"
-                    icon-src="../assets/img/shopping-cart-icon.svg"
+                    :icon-src="require('@/assets/img/shopping-bag-icon.svg')"
                     icon-bg-color="pink"
                 />
             </div>

@@ -38,6 +38,7 @@ export default defineComponent({
             // type assertion to use static typing
             type: String as () => BackgroundColor,
             required: true,
+            default: 'blue',
         },
     },
     setup(props) {
@@ -48,3 +49,9 @@ export default defineComponent({
     },
 });
 </script>
+
+<style>
+img {
+    color: white;
+}
+</style>
