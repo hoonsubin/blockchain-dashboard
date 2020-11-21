@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
 import Dashboard from '../views/Dashboard.vue';
 import Forms from '../views/Forms.vue';
@@ -8,7 +8,6 @@ import Login from '../views/Login.vue';
 import Modal from '../views/Modal.vue';
 import Card from '../views/Card.vue';
 import Blank from '../views/Blank.vue';
-import NotFound from '../views/NotFound.vue';
 
 const routes: RouteRecordRaw[] = [
     {
@@ -55,7 +54,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes: routes,
 });
 

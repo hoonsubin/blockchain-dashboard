@@ -1,7 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 whitelist = ['gray', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'purple', 'pink'].reduce(
-    (result, color) => result.push(`text-${color}-600`, `bg-${color}-600`, `bg-${color}-500`) && result,
+    (result, color) =>
+        result.push(`text-${color}-600`, `bg-${color}-600`, `bg-${color}-500`) && result,
     [],
 );
 
