@@ -17,8 +17,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-import Sidebar from '../components/Sidebar.vue';
-import Header from '../components/Header.vue';
+import Sidebar from '@/components/Sidebar.vue';
+import Header from '@/components/Header.vue';
 
 export default defineComponent({
     components: {

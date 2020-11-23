@@ -38,7 +38,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import NumberPanel from '@/components/NumberPanel.vue';
-import UserTable from '@Header.vue';
+import UserTable from '@/components/UserTable.vue';
 import { User } from '@/models';
 
 export default defineComponent({
