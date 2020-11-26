@@ -55,7 +55,7 @@ export default defineComponent({
         };
 
         // mocking user data
-        const users = ref<User[]>([...Array(35).keys()].map(() => testUser));
+        const users = ref<User[]>([...Array(20).keys()].map(() => testUser));
 
         return {
             users,

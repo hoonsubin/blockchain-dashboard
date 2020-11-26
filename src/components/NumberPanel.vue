@@ -1,6 +1,6 @@
 <template>
     <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
-        <div class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
+        <div class="flex items-center px-5 py-5 shadow-sm rounded-md bg-white">
             <div :class="`p-3 rounded-full bg-${iconBgColor}-600 bg-opacity-75`">
                 <img :src="iconSrc" alt="icon" class="h-8 w-8 text-white" />
             </div>
@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, computed } from 'vue';
 
 // tailwind css color alias
 type BackgroundColor = 'indigo' | 'pink' | 'blue' | 'orange';
@@ -42,7 +42,7 @@ export default defineComponent({
         },
     },
     setup(props) {
-        const formatVal = props.value.toLocaleString();
+        const formatVal = computed(() => props.value.toLocaleString());
         return {
             formatVal,
         };
