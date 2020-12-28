@@ -3,7 +3,7 @@
         <Sidebar />
 
         <div class="flex-1 flex flex-col overflow-hidden">
-            <Header />
+            <Navbar />
 
             <main class="flex-1 overflow-x-hidden overflow-y-auto">
                 <div class="container mx-auto px-6 py-8">
@@ -17,12 +17,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-import Sidebar from '../components/Sidebar.vue';
-import Header from '../components/Header.vue';
+import Sidebar from '@/components/Sidebar.vue';
+import Navbar from '@/components/Navbar.vue';
 
 export default defineComponent({
     components: {
-        Header,
+        Navbar,
         Sidebar,
     },
 });

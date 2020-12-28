@@ -3,7 +3,7 @@
         <!--Login card-->
         <div class="p-6 max-w-sm w-full bg-gray-900 shadow-md rounded-md">
             <div class="flex justify-center items-center">
-                <img class="h-10 w-10 mr-4" src="../assets/img/logo-small.png" />
+                <img class="h-10 w-10 mr-4" src="@/assets/img/logo-small.png" />
                 <span class="text-gray-400 font-semibold text-2xl">Blockchain Dashboard</span>
             </div>
 

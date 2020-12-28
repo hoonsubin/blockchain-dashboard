@@ -87,7 +87,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 
-interface User {
+interface LoginUser {
     username: string;
     email: string;
     password: string;
@@ -96,7 +96,7 @@ interface User {
 
 export default defineComponent({
     setup() {
-        const user = ref<User>({
+        const user = ref<LoginUser>({
             username: '',
             email: '',
             password: '',

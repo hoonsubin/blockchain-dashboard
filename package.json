@@ -9,6 +9,7 @@
     "start": "yarn run serve"
   },
   "dependencies": {
+    "@polkadot/api": "^2.10.1",
     "chart.js": "^2.9.4",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
@@ -16,7 +17,8 @@
     "vue": "^3.0.2",
     "vue-chartjs": "^3.5.1",
     "vue-router": "^4.0.0-beta.13",
-    "vuex": "^4.0.0-rc.1"
+    "vuex": "^4.0.0-rc.1",
+    "web3": "^1.3.0"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
